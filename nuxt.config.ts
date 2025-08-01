@@ -15,7 +15,8 @@ export default {
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.svg" }],
   },
-
+  ssr: true,
+  target: 'server',
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
 
