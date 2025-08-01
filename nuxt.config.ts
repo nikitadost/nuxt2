@@ -38,12 +38,17 @@ export default {
   buildModules: ["@nuxt/typescript-build"],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/axios', "@nuxtjs/netlify-files"],
-  netlifyFiles: {
-    include: ['_nuxt/**/*'] // важно для корректной работы
-  },
+  modules: ['@nuxtjs/axios'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {distDir: 'dist',},
+  build: {},
+
+  "builds": [
+    {
+      "src": "nuxt.config.ts",
+      "use": "@nuxtjs/vercel-builder",
+      "config": {}
+    }
+  ],
   
 };
