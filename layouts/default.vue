@@ -2,22 +2,20 @@
   <div>
     <nav class="navbar">
       <div class="navbar-brand">
-<nuxt-link to="/"><img class="navbar-logo" src="/images/logo.png" alt="logo"></nuxt-link>
+        <nuxt-link to="/"
+          ><img class="navbar-logo" src="/images/logo.png" alt="logo"
+        /></nuxt-link>
       </div>
       <div class="navbar-menu">
         <div class="navbar-start">
-            <nuxt-link to="/about" class="navbar-item">
-              О нас
-            </nuxt-link>
-            <nuxt-link to="/contacts" class="navbar-item" no-prefetch>
-              Контакты
-            </nuxt-link>
-            <nuxt-link to="/todolist" class="navbar-item">
-              Список дел
-            </nuxt-link>
+          <nuxt-link to="/about" class="navbar-item"> О нас </nuxt-link>
+          <nuxt-link to="/contacts" class="navbar-item" no-prefetch>
+            Контакты
+          </nuxt-link>
+          <nuxt-link to="/todolist" class="navbar-item"> Список дел </nuxt-link>
         </div>
       </div>
-      </nav>
+    </nav>
     <nuxt />
   </div>
 </template>
@@ -57,7 +55,6 @@ li {
   list-style: none;
 }
 
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -72,5 +69,4 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-
 </style>

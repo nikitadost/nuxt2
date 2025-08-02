@@ -1,6 +1,6 @@
 <template>
-  <div class="error_layout" >
-    <div id="error" >
+  <div class="error_layout">
+    <div id="error">
       <div class="error_status">{{ error.statusCode }}</div>
       <div class="error_message">{{ error.message }}</div>
     </div>
@@ -9,7 +9,7 @@
 
 <script lang="ts">
 export default {
-  layout: 'error-layout',
+  layout: "error-layout",
   props: ["error"],
 };
 </script>
@@ -21,7 +21,6 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
 }
 
 .error_status {
@@ -31,4 +30,3 @@ export default {
   font-size: 24px;
 }
 </style>
-

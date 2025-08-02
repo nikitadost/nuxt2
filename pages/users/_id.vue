@@ -6,13 +6,13 @@
 
 <script>
 export default {
-  name: 'User',
+  name: "User",
   validate({ params }) {
-    const idCheck = /^\d+$/.test(params.id)
+    const idCheck = /^\d+$/.test(params.id);
     if (!idCheck) {
-      throw new Error('Invalid ID')
+      throw new Error("Invalid ID");
     }
-    return true
+    return true;
   },
-}
+};
 </script>

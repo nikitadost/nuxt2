@@ -16,21 +16,20 @@ export default {
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.svg" }],
   },
   ssr: true,
-  target: 'server',
+  target: "server",
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
 
   axios: {
-    baseURL: 'https://easydev.club/api/v1',
+    baseURL: "https://easydev.club/api/v1",
     headers: {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
     },
     withCredentials: true,
   },
-  loading: '~/components/LoadingBar.vue',
+  loading: "~/components/LoadingBar.vue",
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  
-  
+
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
@@ -38,17 +37,16 @@ export default {
   buildModules: ["@nuxt/typescript-build"],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/axios'],
+  modules: ["@nuxtjs/axios"],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 
-  "builds": [
+  builds: [
     {
-      "src": "nuxt.config.ts",
-      "use": "@nuxtjs/vercel-builder",
-      "config": {}
-    }
+      src: "nuxt.config.ts",
+      use: "@nuxtjs/vercel-builder",
+      config: {},
+    },
   ],
-  
 };
